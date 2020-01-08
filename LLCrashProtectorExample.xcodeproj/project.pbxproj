@@ -16,6 +16,11 @@
 		648FF5EB23C583ED00F9F87A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 648FF5EA23C583ED00F9F87A /* main.m */; };
 		648FF5F523C583ED00F9F87A /* LLCrashProtectorExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 648FF5F423C583ED00F9F87A /* LLCrashProtectorExampleTests.m */; };
 		648FF60023C583ED00F9F87A /* LLCrashProtectorExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 648FF5FF23C583ED00F9F87A /* LLCrashProtectorExampleUITests.m */; };
+		648FF61923C5847600F9F87A /* LLWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 648FF61023C5847600F9F87A /* LLWeakTimer.m */; };
+		648FF61C23C5847600F9F87A /* LLNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 648FF61523C5847600F9F87A /* LLNotificationCenter.m */; };
+		648FF61D23C5847700F9F87A /* NSObject+LLAssociatedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 648FF61823C5847600F9F87A /* NSObject+LLAssociatedObject.m */; };
+		648FF62023C5851100F9F87A /* NSObject+LLDeallocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 648FF61F23C5851000F9F87A /* NSObject+LLDeallocBlock.m */; };
+		648FF62323C5858700F9F87A /* NSObject+LLSafeObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = 648FF62123C5858700F9F87A /* NSObject+LLSafeObservation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,16 @@
 		648FF5FB23C583ED00F9F87A /* LLCrashProtectorExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLCrashProtectorExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		648FF5FF23C583ED00F9F87A /* LLCrashProtectorExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLCrashProtectorExampleUITests.m; sourceTree = "<group>"; };
 		648FF60123C583ED00F9F87A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		648FF61023C5847600F9F87A /* LLWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLWeakTimer.m; sourceTree = "<group>"; };
+		648FF61423C5847600F9F87A /* LLNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNotificationCenter.h; sourceTree = "<group>"; };
+		648FF61523C5847600F9F87A /* LLNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNotificationCenter.m; sourceTree = "<group>"; };
+		648FF61623C5847600F9F87A /* LLWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLWeakTimer.h; sourceTree = "<group>"; };
+		648FF61723C5847600F9F87A /* NSObject+LLAssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LLAssociatedObject.h"; sourceTree = "<group>"; };
+		648FF61823C5847600F9F87A /* NSObject+LLAssociatedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LLAssociatedObject.m"; sourceTree = "<group>"; };
+		648FF61E23C5851000F9F87A /* NSObject+LLDeallocBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LLDeallocBlock.h"; sourceTree = "<group>"; };
+		648FF61F23C5851000F9F87A /* NSObject+LLDeallocBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LLDeallocBlock.m"; sourceTree = "<group>"; };
+		648FF62123C5858700F9F87A /* NSObject+LLSafeObservation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LLSafeObservation.m"; sourceTree = "<group>"; };
+		648FF62223C5858700F9F87A /* NSObject+LLSafeObservation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LLSafeObservation.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +119,7 @@
 		648FF5D723C583EB00F9F87A /* LLCrashProtectorExample */ = {
 			isa = PBXGroup;
 			children = (
+				648FF60E23C5841900F9F87A /* LLCrashProtector */,
 				648FF5D823C583EB00F9F87A /* AppDelegate.h */,
 				648FF5D923C583EB00F9F87A /* AppDelegate.m */,
 				648FF5DB23C583EB00F9F87A /* SceneDelegate.h */,
@@ -135,6 +151,23 @@
 				648FF60123C583ED00F9F87A /* Info.plist */,
 			);
 			path = LLCrashProtectorExampleUITests;
+			sourceTree = "<group>";
+		};
+		648FF60E23C5841900F9F87A /* LLCrashProtector */ = {
+			isa = PBXGroup;
+			children = (
+				648FF61423C5847600F9F87A /* LLNotificationCenter.h */,
+				648FF61523C5847600F9F87A /* LLNotificationCenter.m */,
+				648FF61623C5847600F9F87A /* LLWeakTimer.h */,
+				648FF61023C5847600F9F87A /* LLWeakTimer.m */,
+				648FF61E23C5851000F9F87A /* NSObject+LLDeallocBlock.h */,
+				648FF61F23C5851000F9F87A /* NSObject+LLDeallocBlock.m */,
+				648FF61723C5847600F9F87A /* NSObject+LLAssociatedObject.h */,
+				648FF61823C5847600F9F87A /* NSObject+LLAssociatedObject.m */,
+				648FF62223C5858700F9F87A /* NSObject+LLSafeObservation.h */,
+				648FF62123C5858700F9F87A /* NSObject+LLSafeObservation.m */,
+			);
+			path = LLCrashProtector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,10 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				648FF61C23C5847600F9F87A /* LLNotificationCenter.m in Sources */,
 				648FF5E023C583EB00F9F87A /* ViewController.m in Sources */,
+				648FF61923C5847600F9F87A /* LLWeakTimer.m in Sources */,
 				648FF5DA23C583EB00F9F87A /* AppDelegate.m in Sources */,
+				648FF62323C5858700F9F87A /* NSObject+LLSafeObservation.m in Sources */,
 				648FF5EB23C583ED00F9F87A /* main.m in Sources */,
 				648FF5DD23C583EB00F9F87A /* SceneDelegate.m in Sources */,
+				648FF61D23C5847700F9F87A /* NSObject+LLAssociatedObject.m in Sources */,
+				648FF62023C5851100F9F87A /* NSObject+LLDeallocBlock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
